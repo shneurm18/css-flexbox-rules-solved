@@ -12,6 +12,8 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  gap: 40px;
 }
 
 h2 {
@@ -27,6 +29,13 @@ p {
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  margin-top: 20px;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .subtext {
@@ -37,6 +46,36 @@ form {
 #sign-in,
 #sign-up {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#sign-in-form,
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sign-in-form {
+  height: 300px;
+}
+
+#sign-up-form {
+  height: 700px
+}
+
+.form-checkbox-control {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 a {
@@ -46,6 +85,49 @@ a {
 
 label {
   font-weight: bold;
+}
+
+label[for="stay-signed-in"] {
+  font-weight: lighter;
+}
+
+.form-radio-control label{
+  font-weight: lighter;
+}
+
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input-control label {
+  padding-bottom: 6px;
+}
+
+.form-group-vertical-control label {
+  padding-left: 5px;
+}
+
+.form-group-vertical-control {
+  padding-top: 6px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  gap: 30px;
+}
+
+.form-group-horizontal-control select {
+  width: 320px;
+  height: 30px;
+}
+
+input[type="text"] {
+  height: 30px;
+}
+
+input#avatar {
+  max-width: fit-content;
 }
 
 input {
